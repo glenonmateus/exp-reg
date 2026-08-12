@@ -12,3 +12,5 @@ Não canso de ouvir a Maria:
 export const arquivos = ['Atenção.jpg', 'FOTO.jpeg', 'Meu gatinho.jpg', 'Meu gatinho.JPG', 'Meu gatinho.JPEG', 'Marido.png', 'list de compras.txt']
 
 export const html = '<p>Olá mundo</p> <p>Olá de novo</p>'
+
+export const alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789'

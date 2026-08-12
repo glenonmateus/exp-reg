@@ -3,6 +3,9 @@ g - global (encontra todas as ocorrencias)
 i - insensitive (ignora as letras maiusculas e minusculas)
 () - grupo
 | - or
+[] - conjunto
+[^] - negação
+[inicio-fim] - range (crescente)
 
 Quantificadores
 * (opcional) 0 ou N {0,}
@@ -31,11 +34,15 @@ const regExp2 = /\.jpe?g/gi
 for (const arquivo of arquivos) {
   if (arquivo.match(regExp2)) console.log(arquivo)
 }
-*/
 
-import { html } from './base.js';
 const regExp1 = /<.+>.+<\/.+>/g
 const regExp2 = /<.+?>.+?<\/.+?>/g
 console.log(html.match(regExp1)) // greedy
 console.log(html.match(regExp2)) // non-greedy
+*/
 
+
+import { alfabeto } from './base.js';
+
+const regExp1 = /[0-9]/g
+console.log(alfabeto.match(regExp1))
