@@ -8,3 +8,7 @@ doming. Também né! Sendo a boa mineira que é, nunca esquece seu famoso pão d
 Não canso de ouvir a Maria:
 "Jooooooooãoooooo, o café tá prontinho aqui, Veeemm!"
 `
+
+export const arquivos = ['Atenção.jpg', 'FOTO.jpeg', 'Meu gatinho.jpg', 'Meu gatinho.JPG', 'Meu gatinho.JPEG', 'Marido.png', 'list de compras.txt']
+
+export const html = '<p>Olá mundo</p> <p>Olá de novo</p>'
