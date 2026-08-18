@@ -1,11 +1,14 @@
 /*
 g - global (encontra todas as ocorrencias)
 i - insensitive (ignora as letras maiusculas e minusculas)
-() - grupo
+m - multiline
+() - grupo -> para acessar os grupos podemos utilizar retrovisores $1, $2, etc, ou por referencia \1, \2, etc
 | - or
 [] - conjunto
 [^] - negação
 [inicio-fim] - range (crescente)
+^ - começa com ...
+$ - termina com ...
 
 Quantificadores
 * (opcional) 0 ou N {0,}
@@ -39,10 +42,16 @@ const regExp1 = /<.+>.+<\/.+>/g
 const regExp2 = /<.+?>.+?<\/.+?>/g
 console.log(html.match(regExp1)) // greedy
 console.log(html.match(regExp2)) // non-greedy
-*/
-
-
-import { alfabeto } from './base.js';
 
 const regExp1 = /[0-9]/g
 console.log(alfabeto.match(regExp1))
+
+const regExp1 = /<(\w+).*?>.+?<\/\1>/gi
+console.log(html.match(regExp1))
+*/
+
+import { html } from './base.js';
+
+const regExp2 = /(<(\w+)[\s\S]*?>)([\s\S]*?)(<\/\2>)/gi
+console.log(html.replace(regExp2, '$1$3$4'))
+

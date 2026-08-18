@@ -11,6 +11,20 @@ Não canso de ouvir a Maria:
 
 export const arquivos = ['Atenção.jpg', 'FOTO.jpeg', 'Meu gatinho.jpg', 'Meu gatinho.JPG', 'Meu gatinho.JPEG', 'Marido.png', 'list de compras.txt']
 
-export const html = '<p>Olá mundo</p> <p>Olá de novo</p>'
+export const html = `<p class="teste teste" data-test='teste'>Olá mundo</p> <p>Olá de novo</p> <div>Sou a div</div>`
 
 export const alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789'
+
+export const cpfs = `
+  475.566.600-79
+  058.318.910-54
+  447.991.780-24
+  963.987.321-00
+`;
+
+export const ips = `
+  0.0.0.0
+  192.168.0.25
+  10.10.5.12
+  255.255.255.255
+`
